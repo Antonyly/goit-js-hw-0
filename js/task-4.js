@@ -1,3 +1,5 @@
+
+
 const decrementBtnEL = document.querySelector("[data-action='decrement']");
 const incrementBtnEl = document.querySelector("[data-action='increment']");
 const totalSpanEl = document.querySelector("#value");
