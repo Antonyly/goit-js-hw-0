@@ -99,6 +99,8 @@ button:hover {
     align-items: center;
     margin-top: 30px;
     height: 20px;
+    font-size: 20px;
+    color: rgb(0, 47, 47);
 }
 .label-int {
     display: flex;
