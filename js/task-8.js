@@ -10,16 +10,33 @@ function submitEl(event) {
 
     const emailEl = formEl.email.value;
     const passEl = formEl.password.value;
-    formInputEl.forEach(function (input) {
-        if (input.value === '') {
-            alert('Все поля должны быть заполнены');
-        };
-    });
+
+    formSubEl.reset();
+    if (emailEl === '' || passEl === '') {
+        alert('Всі поля повинні бути заповнені');
+        return;
+    }
     if (emailEl !== '' && passEl !== '') {
-        formSubEl.reset();
-        console.log('Email:', emailEl);
-        console.log('Password:', passEl)
-    };
+        console.log(`'email:', ${emailEl} 
+'password:', ${passEl}`) 
+      }
 
+    // formInputEl.forEach(function (input) {
+    //     if (input.value === '') {
+    //         alert('Все поля должны быть заполнены');
+    //     };
+    // });
+    // formSubEl.forEach(function (input) {
+    //     if (emailEl === '' && passEl === '') {
+    //         alert('Все поля должны быть заполнены');
+    // formSubEl.reset();
+    //     return;
+        // };
+    // });
+
+    // if (emailEl !== '' && passEl !== '') {
+    //     formSubEl.reset();
+    //     console.log(['Email:', emailEl]);
+    //     console.log(['Password:', passEl])
+    // };
 }
-
