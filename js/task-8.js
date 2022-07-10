@@ -16,12 +16,14 @@ function submitEl(event) {
         alert('Всі поля повинні бути заповнені');
         return;
     }
-    if (emailEl !== '' && passEl !== '') {
-        // console.log('Email:', emailEl);
-        // console.log('Password:', passEl)
-        console.log(`Email:, ${emailEl} 
-Password:, ${passEl}`) 
-      }
+    // if (emailEl !== '' && passEl !== '') {
+    const form = {
+        Email: emailEl,
+        Password: passEl,
+        // }
+    }
+    console.log(form)
+    
 
     // formInputEl.forEach(function (input) {
     //     if (input.value === '') {
