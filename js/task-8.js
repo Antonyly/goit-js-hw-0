@@ -17,8 +17,10 @@ function submitEl(event) {
         return;
     }
     if (emailEl !== '' && passEl !== '') {
-        console.log(`'email:', ${emailEl} 
-'password:', ${passEl}`) 
+        // console.log('Email:', emailEl);
+        // console.log('Password:', passEl)
+        console.log(`Email:, ${emailEl} 
+Password:, ${passEl}`) 
       }
 
     // formInputEl.forEach(function (input) {
